@@ -62,7 +62,7 @@
 
         public MoneyTransfer() { }
 
-        public void SetAttackStrategy(ITransferMoney transferMoney)
+        public void SetPaymentService(ITransferMoney transferMoney)
         {
             _transferMoney = transferMoney;
         }
@@ -77,6 +77,8 @@
     {
         public static void RunSample()
         {
+            var moneyTransfer = new MoneyTransfer();
+
             do
             {
                 Console.WriteLine("Please select transfer type:");
@@ -106,7 +108,7 @@
 
                 if (transferMoney != null)
                 {
-                    var moneyTransfer = new MoneyTransfer(transferMoney);
+                    moneyTransfer.SetPaymentService(transferMoney);
 
                     moneyTransfer.TransferMoney(new PaymentOptions
                     {

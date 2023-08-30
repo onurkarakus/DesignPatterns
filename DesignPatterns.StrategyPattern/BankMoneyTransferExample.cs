@@ -83,15 +83,10 @@ namespace DesignPatterns.StrategyPattern
     {
         public static void RunSample()
         {
-            var newMoneyTransfer = new MoneyTransfer(new BankTransfer());
-
-            newMoneyTransfer.TransferMoney(new PaymentOptions
+            do
             {
-                Amount = 100,
-                DestinationAccount = "123456789",
-                SourceAccount = "987654321",
-                TransferDate = DateTime.Now
-            });
+
+            } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
         }
     }

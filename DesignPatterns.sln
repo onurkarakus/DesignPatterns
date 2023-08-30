@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.StrategyPattern", "DesignPatterns.StrategyPattern\DesignPatterns.StrategyPattern.csproj", "{A229A2E8-DF3D-4B5B-85D0-EDB77B985069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.StrategyPattern", "DesignPatterns.StrategyPattern\DesignPatterns.StrategyPattern.csproj", "{A229A2E8-DF3D-4B5B-85D0-EDB77B985069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.ProxyPattern", "DesignPatterns.ProxyPattern\DesignPatterns.ProxyPattern.csproj", "{4D709541-0D01-445F-878A-818E60A6B7D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.ProxyPattern", "DesignPatterns.ProxyPattern\DesignPatterns.ProxyPattern.csproj", "{4D709541-0D01-445F-878A-818E60A6B7D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.ObserverPattern", "DesignPatterns.ObserverPattern\DesignPatterns.ObserverPattern.csproj", "{E18873FF-C4A9-41A5-9009-F9BE7621598E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4D709541-0D01-445F-878A-818E60A6B7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D709541-0D01-445F-878A-818E60A6B7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D709541-0D01-445F-878A-818E60A6B7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18873FF-C4A9-41A5-9009-F9BE7621598E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18873FF-C4A9-41A5-9009-F9BE7621598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18873FF-C4A9-41A5-9009-F9BE7621598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18873FF-C4A9-41A5-9009-F9BE7621598E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.StrategyPattern
+﻿namespace DesignPatterns.StrategyPattern
 {
     // Transfer Money With Different Options
 
@@ -85,7 +79,43 @@ namespace DesignPatterns.StrategyPattern
         {
             do
             {
+                Console.WriteLine("Please select transfer type:");
+                Console.WriteLine("1. Bank Transfer");
+                Console.WriteLine("2. PayPal Transfer");
+                Console.WriteLine("3. Fast Transfer");
 
+                ITransferMoney transferMoney = null;
+
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.D1:
+                        transferMoney = new BankTransfer();
+                        break;
+                    case ConsoleKey.D2:
+                        transferMoney = new PayPalTransfer();
+                        break;
+                    case ConsoleKey.D3:
+                        transferMoney = new FastTransfer();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Selection");
+                        break;
+                }
+
+                Console.WriteLine();
+
+                if (transferMoney != null)
+                {
+                    var moneyTransfer = new MoneyTransfer(transferMoney);
+
+                    moneyTransfer.TransferMoney(new PaymentOptions
+                    {
+                        Amount = 100,
+                        DestinationAccount = "123456789",
+                        SourceAccount = "987654321",
+                        TransferDate = DateTime.Now
+                    });                    
+                }
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
         }

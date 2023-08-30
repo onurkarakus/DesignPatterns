@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            FootballExample.RunSample();
+            //FootballExample.RunSample();
+
+            BankMoneyTransferExample.RunSample();
         }
     }
 }
